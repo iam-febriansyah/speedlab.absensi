@@ -1,0 +1,69 @@
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.galeritekno.speederp"
+  xmlns:tools="http://schemas.android.com/tools"
+>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+    android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+    tools:node="remove"
+  />
+    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+    <queries>
+      <!-- If your app checks for SMS support -->
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="sms" />
+      </intent>
+      <!-- If your app checks for call support -->
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="tel" />
+      </intent>
+    </queries>
+
+    <application
+    android:requestLegacyExternalStorage="true"
+    android:label="SpeedERP For Employee"
+    android:icon="@mipmap/ic_launcher"
+  >
+      <activity
+      android:name=".MainActivity"
+      android:exported="true"
+      android:launchMode="singleTop"
+      android:theme="@style/LaunchTheme"
+      android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+      android:hardwareAccelerated="true"
+      android:windowSoftInputMode="adjustResize"
+    >
+        <meta-data
+        android:name="io.flutter.embedding.android.NormalTheme"
+        android:resource="@style/NormalTheme"
+      />
+        <meta-data
+        android:name="io.flutter.embedding.android.SplashScreenDrawable"
+        android:resource="@drawable/launch_background"
+      />
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter>
+          <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+          <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+      </activity>
+      <meta-data
+      android:name="com.google.android.geo.API_KEY"
+      android:value="AIzaSyCOPmdlnzAEy4RmU4Zqw0QHGAIfjSnCMw4"
+    />
+      <meta-data android:name="flutterEmbedding" android:value="2" />
+      <receiver
+      android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+      android:exported="true"
+    >   
+    </receiver> 
+    </application>
+</manifest>

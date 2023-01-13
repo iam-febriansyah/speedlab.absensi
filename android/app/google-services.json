@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1025744356973",
+    "firebase_url": "https://speedlab-lentera.firebaseio.com",
+    "project_id": "speedlab-lentera",
+    "storage_bucket": "speedlab-lentera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025744356973:android:e0c6a7ee1431d7eeb56164",
+        "android_client_info": {
+          "package_name": "com.galeritekno.speederp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025744356973-lcqo566bjcqmv6osrhq0mkf7cfq8judf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQYh580tiHLQcpZRP76j8qQSNAQlqJLFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025744356973-lcqo566bjcqmv6osrhq0mkf7cfq8judf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1025744356973-ppjf1t3ln0h1uit0i6ejmotn6cuklemv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.galeritekno.speederp001"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
